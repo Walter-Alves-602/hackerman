@@ -1,3 +1,14 @@
+/* 
+Menu de estilos:
+1 - Geral
+2 - Classes de regras reutilizaveis
+3 - Classes de englobamento >>funcionarao como cabeçalho para os respectivos conteudos herdeiros<<
+3.5 Especificação de classes herdeiras
+*/
+
+
+/* ----------------------------  1 - Geral  ---------------------------- */
+
 * {
     margin: 0;
 }
@@ -10,41 +21,49 @@ body {
     background-repeat: no-repeat;
 }
 
-.centralize {
+@font-face {
+    font-family: "neon";
+    src: url(/font/bpneon-webfont.woff2) format("opentype");
+}
+
+
+/* ---------------  2 - Classes de regras reutilizaveis  --------------- */
+
+.background_Centralize {
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.footerreal {
-    clear: both;
-}
-
-footer.footerreal p {
-    text-align: center;
-}
-
-.backgroundTransparence {
+.background_Pattern {
     margin-top: 1%;
     background-color: #ffffffe6;
     padding: 10px;
     box-sizing: border-box;
 }
 
-p {
-    text-align: justify;
-    padding: 10px 15px;
+
+/* --- Metodo de criaçao de menu ---*/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
 }
 
-article {
-    width: 70%;
-    float: left;
+.group:after {
+    clear: both;
 }
 
-aside {
-    width: 29%;
-    float: right;
+.group {
+    zoom: 1;
 }
+
+
+/* ------------------  3 - Classes de englobamento  ------------------ */
+
+
+/* -------- Header --------*/
 
 .realHeader {
     background-color: #460931;
@@ -62,7 +81,10 @@ aside {
     height: 50px;
 }
 
-div .navigation {
+
+/* ----- Navegador -----*/
+
+.realNavigation {
     float: right;
     width: 70%;
     box-sizing: border-box;
@@ -102,26 +124,39 @@ nav ul li a:hover {
     text-shadow: 0px 0px 1px white, 0px 0px 5px #e986a7, 0px 0px 20px #e46a7e;
 }
 
-.group:before,
-.group:after {
-    content: "";
-    display: table;
+
+/* -------- Body --------*/
+
+p {
+    text-align: justify;
+    padding: 10px 15px;
 }
 
-.group:after {
-    clear: both;
+article {
+    width: 70%;
+    float: left;
 }
 
-.group {
-    zoom: 1;
+
+/* ---- Aside Menu ----*/
+
+aside {
+    width: 29%;
+    float: right;
 }
+
+
+/* -------- Footer --------*/
 
 footer {
     padding: 10px;
     color: #666768;
 }
 
-@font-face {
-    font-family: "neon";
-    src: url(/font/bpneon-webfont.woff2) format("opentype");
+.realFooter {
+    clear: both;
+}
+
+footer.realFooter p {
+    text-align: center;
 }
