@@ -33,6 +33,7 @@ body {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 .background_Pattern {
@@ -59,6 +60,9 @@ body {
     zoom: 1;
 }
 
+.hide{
+    display: none;
+}
 
 /* ------------------  3 - Classes de englobamento  ------------------ */
 
@@ -108,17 +112,26 @@ body {
     box-sizing: border-box;
 }
 
-.navSwitchHide{
-    display: none;
-}
 
 .groupSwitch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
     padding: 15px 8px;
 }
 
 @media(max-width: 889px){
-    .group{
+    .groupHead{
         display: none;
+    }
+    #navSide{
+        display: none;
+    }
+    .artigo{
+        display: flex;
+        width: 95%;
+        justify-content: center;
     }
 }
 

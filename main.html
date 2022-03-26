@@ -36,7 +36,7 @@
             </header>
 
             <nav class="realNavigation">
-                <ul class="group">
+                <ul class="groupHead group">
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">ENVIE</a></li>
                     <li><a href="#">ANUNCIA</a></li>
@@ -48,7 +48,7 @@
                 </button>
             </nav>
         </div>
-        <div class="navSwitchHide" id="navS">
+        <div class="hide" id="navS">
             <nav>
                 <ul class="groupSwitch">
                     <li><a href="#">BLOG</a></li>
@@ -62,8 +62,8 @@
     </div>
 
     <main class="background_Centralize">
-
-        <aside class="background_Pattern">
+        
+        <aside class="background_Pattern" id="navSide">
             <ul>
                 <li><a href="#">Categoria 1</a></li>
                 <li><a href="#">Categoria 2</a></li>
@@ -73,7 +73,7 @@
         </aside>
 
         <div>
-            <article class="background_Pattern">
+            <article class="background_Pattern artigo">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto eum voluptatibus quos rerum ad labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus
                     iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam
                     nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias
@@ -88,7 +88,7 @@
                 </p>
             </article>
 
-            <article class="background_Pattern">
+            <article class="background_Pattern artigo">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto eum voluptatibus quos rerum ad labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus
                     iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam
                     nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias
@@ -103,7 +103,7 @@
                 </p>
             </article>
 
-            <article class="background_Pattern">
+            <article class="background_Pattern artigo">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto eum voluptatibus quos rerum ad labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus
                     iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam
                     nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias labore cupiditate id delectus iure vel at quasi dolorum, magnam nemo officia perferendis molestias
@@ -131,7 +131,7 @@
     function menuS(){
         var divEle = document.getElementById("navS"),
             current_class = divEle.className;
-        divEle.className = (current_class == "navSwitch") ? "navSwitchHide" : "navSwitch";
+        divEle.className = (current_class == "navSwitch") ? "hide" : "navSwitch";
       }
 </script>
 
