@@ -22,6 +22,7 @@
 <head>
     <meta charset="utf-8">
     <title>Hackerman</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,6 +37,20 @@
 
             <nav class="realNavigation">
                 <ul class="group">
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">ENVIE</a></li>
+                    <li><a href="#">ANUNCIA</a></li>
+                    <li><a href="#">SOBRE</a></li>
+                    <li><a href="#">DESTAQUES</a></li>
+                </ul>
+                <button class="menuSwitch" onclick="menuS()">
+                    <img src="images/menu.png" id="menuSwitchImg">
+                </button>
+            </nav>
+        </div>
+        <div class="navSwitchHide" id="navS">
+            <nav>
+                <ul class="groupSwitch">
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">ENVIE</a></li>
                     <li><a href="#">ANUNCIA</a></li>
@@ -105,19 +120,27 @@
         </div>
 
         <footer class="realFooter">
-            <p>©Copyright 2022 by ToniLommez. No rights reversed.</p>
+            <p>©Copyright 2022 by ToniLommez. No rights reversed. / "It's Copyleft Toni!" (Walter Alves)</p>
         </footer>
     </main>
 
 </body>
 
+<script>
 
+    function menuS(){
+        var divEle = document.getElementById("navS"),
+            current_class = divEle.className;
+        divEle.className = (current_class == "navSwitch") ? "navSwitchHide" : "navSwitch";
+      }
+</script>
 
 </html>
 
 
 <!-- 
-    Controle de versoes:
-    Versao:   Status:    Data          Autor:         Nome:
-    v0.1.     (  OK  )     24/03/2022    Toni_Lommez    Criaçao do mapa basico e legibilidade de codigo.
+    Controle de versoes:0.0.1
+    Versao:   Status:      Data          Autor:         Nome:
+    v0.1.0    (  OK  )     24/03/2022    Toni_Lommez    Criaçao do mapa basico e legibilidade de codigo.
+    v0.1.1    (  OK  )     26/03/2022    Walter_Razgriz Criaçao responsividade a tela.
 -->
